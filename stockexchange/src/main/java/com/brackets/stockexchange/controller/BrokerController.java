@@ -20,6 +20,14 @@ public class BrokerController {
         return brokerRepository.findAll();
     }
 
+    @RequestMapping(path = "/save", method = RequestMethod.POST)
+    public @ResponseBody String createNewUser(@RequestBody Broker broker) {
+            brokerRepository.save(broker);
+            Broker broker1 = new Broker();
+            broker1.setUsername(broker.getUsername());
+            return "Saved";
+    }
+
     @RequestMapping(path = "/customer", method = RequestMethod.POST)
     public @ResponseBody String createNewBrokerCustomer(@RequestBody Broker_customer b_customer) {
 
