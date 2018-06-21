@@ -5,13 +5,16 @@
 
   /* Graph Styling */
   .graph_styling{
-    height: 450px; width:100%;
+    height: 450px; width:86%;
   }
 
   /*Right Panel*/
   .right_panel{
-    background-color: #F8F8F8;height:100%;margin-top:-20px;padding-bottom: 10%;
+    background-color: #222;height:86%;margin-top:-20px;padding-bottom: 10%;
+    margin-left: -16px;
+
   }
+
 
   /*Set Time styling*/
   .set_buttons_div{

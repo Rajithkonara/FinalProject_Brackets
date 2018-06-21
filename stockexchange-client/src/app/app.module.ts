@@ -27,7 +27,7 @@ const appRoutes:Routes = [
   },
   {
     path: 'fullpage',
-    canActivate:[AuthguardGuard],
+    // canActivate:[AuthguardGuard],
     component:FullpageComponent
 
   }

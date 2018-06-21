@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -22,9 +22,9 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <!-- <li><a href="#">Link</a></li> -->
-        <button  type="button" class="btn btn-default btn-lg curr_bal_button">
+        <button  type="button" class="btn btn-default btn-lg curr_bal_button" ng-model="number">
          Current Balance<br> 
-         $100 
+         {{number}} 
         </button>
         <button type="button" class="btn btn-success btn-lg deposit_button">
          Deposit  <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> 
